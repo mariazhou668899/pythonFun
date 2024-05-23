@@ -37,4 +37,4 @@ Have a think about how you might write your program to make a player's answers l
 
 # Solution
 
-[https://replit.com/@appbrewery/treasure-island-end#main.py](https://replit.com/@appbrewery/treasure-island-end)
+https://replit.com/@mariazhou1/treasure-island-start 
