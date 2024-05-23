@@ -27,3 +27,19 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+print("Welcome to Treasure Island.Your mission is to find the treasure!")
+choose1 = input(print ("You are facing a hill, do you choose to go left or right?")).lower()
+if choose1 == "left":
+          choose2 = input(print("You are facing a river, do you want to swim or wait?")).lower()
+          if choose2 == "wait":
+                    choose3 = input(print("You are facing a house with 3 doors, which one do you choose? Red, Blue or Yellow?")).lower()
+                    if choose3 == "yellow":
+                              print("You win!")
+                    elif choose3 == "blue":
+                              print("Eaten by beasts. Game over.")
+                    elif choose3 == "red":
+                              print("Burned by fire. Game Over.")
+          else:
+                    print("Attacked by trout. Game over.")
+else:
+          print("Fall into a hole.Game Over.")
