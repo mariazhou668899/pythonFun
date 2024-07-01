@@ -1,40 +1,72 @@
-## Treasure Island
+# Compiling Guide for LoveStorying App
 
-# Instructions
+## Downloading the Source Code
 
-Make your own "Choose Your Own Adventure" game. Use conditionals such as `if`, `else`, and `elif` statements to lay out the logic and the story's path in your program. 
+1. Download the source code from the `testQuiz` branch: [LoveStoryingFinalTest - testQuiz](https://github.com/mariazhou668899/LoveStoryingFinalTest/tree/testQuiz)
 
-[To write your code according to my story, you can use this flow chart from draw.io to help you.](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload)
+## Setting Up the Development Environment
 
-However, I think the fun part is writing your *own* story 😊
+1. **Install Node.js**: Node.js is required to install dependencies.
 
-🧞‍♂️ 🐊 🧙‍♂️ 🧟 🧚‍♂️ 🧝‍♂️ 🥷 🤖 👽 🙀 
+2. **Install Expo CLI**: Run the following command to install Expo CLI:
 
-That said if you'd like to continue with my example, feel free to use the text snippets below...
+    ```bash
+    npm install -g expo-cli
+    ```
 
-### Text Snippets from my example
+3. **Navigate to the Source Code Directory**: Change directory to `LoveStoryingFinalTest` where the source code is located.
 
-* 'You\'re at a crossroad. Where do you want to go? Type "left" or "right"'
-* 'You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.'
-* "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?"
-* "It\'s a room full of fire. Game Over."
-* "You found the treasure! You Win!"
-* "You enter a room of beasts. Game Over."
-* "You chose a door that doesn\'t exist. Game Over."
-* "You get attacked by an angry trout. Game Over."
-* "You fell into a hole. Game Over."
+4. **Install Dependencies**: Run the following command to install all necessary dependencies:
 
-# Escaping Characters
+    ```bash
+    npx expo install
+    ```
 
-If you want to use multiple sets of quotes inside a single string, you might have to "escape" some of them using the backslash `\`. You can see this in my first sentence: 'You\'re at a crossroad...'. [More on escaping characters here.](https://www.w3schools.com/python/gloss_python_escape_characters.asp)
+5. **Start the Server**: Use the following command to start the server for the simulator:
 
-# Extensions
+    ```bash
+    npx expo start
+    ```
 
-Have a think about how you might write your program to make a player's answers less case-sensitive. In other words, your code should work regardless of whether your user answers "left" or "Left".
+## Testing the App
 
-[You can also add your own ASCII art](https://ascii.co.uk/art). Just remember to add three single quotes `'''` at the start and at the end of your artwork to turn it into a multi-line string. 
+### Option A: Using Expo Go App (Recommended)
 
+1. Download the Expo Go app on your mobile device.
+2. Scan the QR code shown in the terminal window.
+3. Test the app on your phone.
 
-# Solution
+### Option B: Using iPhone Simulator (macOS)
 
-https://replit.com/@mariazhou1/treasure-island-start 
+1. Press `i` in the terminal window.
+2. The app will open in an iPhone simulator (requires XCode).
+
+### Option C: Using Android Simulator
+
+1. Press `a` in the terminal window.
+2. The app will open in an Android simulator (requires Android SDK).
+
+### Option D: Using Web Browser
+
+1. Press `w` to open the app in your browser. Note that the formatting is not optimized for the web, but the app will still be functional.
+
+2. Configure routing to the server:
+   - Open [localtunnel](http://openaiserver.loca.lt/).
+   - Enter the permission code: `50.47.198.95` into the “Tunnel Password”.
+   - Click “Click to Submit”.
+   - Verify the router is working: open [localtunnel](http://openaiserver.loca.lt/) in your browser again. You should see the message: "OpenAI Proxy Service is running".
+   - If you do not see this message, please email Maria Zhou on Canvas.
+
+## Logging In
+
+Once the app is running, you can either create a new account or use the following credentials:
+
+- **User**: `admin@hotmail.com`
+- **Password**: `123456`
+
+## Video Demo
+
+Watch a demo of the LoveStorying App to see basic navigation and features, including account creation, story generation, viewing stories, questionnaires, push and pull stories from the database, and viewing stories created by other users in the community.
+
+[Video Demo Link](#) (replace `#` with the actual URL)
+
